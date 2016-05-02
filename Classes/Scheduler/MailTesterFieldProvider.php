@@ -144,7 +144,7 @@ class MailTesterFieldProvider implements \TYPO3\CMS\Scheduler\AdditionalFieldPro
         // checks
         $isOK = TRUE;
         foreach ($this->fieldArray as $field => $config) {
-            if ($config['type'] == 'mail' && !\TYPO3\CMS\Core\Utility\GeneralUtility::validEmail($submittedData[$field])) {
+            if ($config['type'] == 'mail' && $submittedData[$field] != '' && !\TYPO3\CMS\Core\Utility\GeneralUtility::validEmail($submittedData[$field])) {
                 $submittedData[$field] = '';
                 $isOK = FALSE;
             }
