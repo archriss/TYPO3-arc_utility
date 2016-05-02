@@ -48,6 +48,7 @@ class MailTester extends \TYPO3\CMS\Scheduler\Task\AbstractTask {
     protected $errorLog = '';
 
     public function execute() {
+        $this->errorLog = '';
         $params = array(
             'to' => array(($this->receiverName != '' ? $this->receiverName : 0) => $this->receiverMail),
             'sender' => array(($this->senderName != '' ? $this->senderName : 0) => $this->senderMail),
@@ -62,8 +63,12 @@ class MailTester extends \TYPO3\CMS\Scheduler\Task\AbstractTask {
             $params['return_path'] = $this->returnPath;
         }
         $result = self::sendMail($params);
-        \TYPO3\CMS\Core\Utility\GeneralUtility::devLog(__CLASS__, 'ArcUtility', 0, array('mailParams' => $params, 'mailResults' => $result));
-        $this->errorLog = 'Success: ' . $result['sent'] . '; Failed: ' . $result['fail'];
+        if ($result) {
+            \TYPO3\CMS\Core\Utility\GeneralUtility::devLog(__CLASS__, 'ArcUtility', 0, array('mailParams' => $params, 'mailResults' => $result));
+            $this->errorLog = 'Mail: ' . $this->receiverMail . '; Success: ' . $result['sent'] . '; Failed: ' . $result['fail'];
+        } else {
+            $this->errorLog = 'Receiver Mail or Body not set.';
+        }
         $this->save();
         if ($result['fail']) {
             return FALSE;
