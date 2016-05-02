@@ -36,22 +36,22 @@ class MailTesterFieldProvider implements \TYPO3\CMS\Scheduler\AdditionalFieldPro
 
     protected $LLL = 'LLL:EXT:arc_utility/Resources/Private/Language/locallang_mailtester.xlf';
     protected $fieldArray = array(
-        'senderName' => array(
-            'type' => 'field',
-            'default' => '',
-            'size' => 30,
-        ),
-        'senderMail' => array(
-            'type' => 'mail',
-            'default' => '',
-            'size' => 30,
-        ),
         'receiverName' => array(
             'type' => 'field',
             'default' => '',
             'size' => 30,
         ),
         'receiverMail' => array(
+            'type' => 'mail',
+            'default' => '',
+            'size' => 30,
+        ),
+        'senderName' => array(
+            'type' => 'field',
+            'default' => '',
+            'size' => 30,
+        ),
+        'senderMail' => array(
             'type' => 'mail',
             'default' => '',
             'size' => 30,
