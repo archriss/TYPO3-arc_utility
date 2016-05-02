@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="fr" datatype="plaintext" original="messages" date="2016-05-02T10:29:51Z" product-name="arc_utility">
+		<header/>
+		<body>
+			<trans-unit id="field.senderName">
+				<source>Sender name</source>
+                <target state="translated">Nom de l'émetteur</target>
+			</trans-unit>
+			<trans-unit id="field.senderMail">
+				<source>Sender mail</source>
+                <target state="translated">Email de l'émetteur</target>
+			</trans-unit>
+			<trans-unit id="field.receiverName">
+				<source>Receiver name</source>
+                <target state="translated">Nom du récepteur</target>
+			</trans-unit>
+			<trans-unit id="field.receiverMail">
+				<source>Receiver mail</source>
+                <target state="translated">Email du récepteur</target>
+			</trans-unit>
+			<trans-unit id="field.replytoMail">
+				<source>Reply to mail</source>
+                <target state="translated">Email reply to</target>
+			</trans-unit>
+			<trans-unit id="field.returnPath">
+				<source>Return path mail</source>
+                <target state="translated">Email return path</target>
+			</trans-unit>
+			<trans-unit id="field.subject">
+				<source>Subject</source>
+                <target state="translated">Sujet</target>
+			</trans-unit>
+			<trans-unit id="field.body">
+				<source>Body</source>
+                <target state="translated">Contenu</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
