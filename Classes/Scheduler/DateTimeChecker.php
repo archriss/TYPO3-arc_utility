@@ -40,6 +40,7 @@ class DateTimeChecker extends \TYPO3\CMS\Scheduler\Task\AbstractTask {
      * @return boolean
      */
     public function execute() {
+    	// Définition de la timezone (non récupéré de TYPO3_CONF_VAR)
         $datetimeZone = new \DateTimeZone('Europe/Paris');
 
         $rtimeObj = new \DateTime;
