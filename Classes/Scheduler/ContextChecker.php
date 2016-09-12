@@ -26,40 +26,32 @@ namespace Archriss\ArcUtility\Scheduler;
  * ************************************************************* */
 
 /**
- * Plugin 'DateTimeChecker' for the 'arc_utility' extension.
+ * Plugin 'ContextChecker' for the 'arc_utility' extension.
  *
  * @author	Christophe Monard <cmonard@archriss.com>
  * @package	TYPO3
  * @subpackage	arc_utility
  */
-class DateTimeChecker extends \TYPO3\CMS\Scheduler\Task\AbstractTask {
+class ContextChecker extends \TYPO3\CMS\Scheduler\Task\AbstractTask {
+
+    // Store the contect
+    protected $lastContext = '';
 
     /**
-     * Main function of the scheduler, Generate date by many way and log their generation into devlog
+     * Main function of the scheduler, get context and return wich one is used
      *
      * @return boolean
      */
     public function execute() {
-    	// Définition de la timezone (non récupéré de TYPO3_CONF_VAR)
-        $datetimeZone = new \DateTimeZone('Europe/Paris');
-
-        $rtimeObj = new \DateTime;
-
-        $btimeObj = \DateTime::createFromFormat('d/m/Y H:i:s', '19/04/2016 00:00:00');
-        $btimeObj->setTimezone($datetimeZone);
-
-        $manual = new \DateTime;
-        $manual->setTimezone($datetimeZone);
-        $manual->setDate(2016, 4, 19);
-        $manual->setTime(0, 0, 0);
-
-        \TYPO3\CMS\Core\Utility\GeneralUtility::devLog(__CLASS__, 'ArcUtility', 0, array(
-            'timezone' => $datetimeZone,
-            'current time' => $rtimeObj->getTimestamp(),
-            'generated midnight' => $btimeObj->getTimestamp(),
-            'manual' => $manual->getTimestamp(),
-        ));
+        /* @var $context \TYPO3\CMS\Core\Core\ApplicationContext */
+        $context = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
+        $this->lastContext = $context->__toString();
+        $this->save();
         return TRUE;
+    }
+
+    public function getAdditionalInformation() {
+        return 'Context: ' . $this->lastContext;
     }
 
 }

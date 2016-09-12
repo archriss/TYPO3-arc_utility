@@ -26,7 +26,7 @@ namespace Archriss\ArcUtility\Scheduler;
  * ************************************************************* */
 
 /**
- * Plugin 'MailTesterFieldProvider' for the 'arc_xxx' extension.
+ * Plugin 'MailTesterFieldProvider' for the 'arc_utility' extension.
  *
  * @author	Christophe Monard <cmonard@archriss.com>
  * @package	TYPO3

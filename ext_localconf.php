@@ -10,6 +10,11 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Archriss\ArcUti
     'title' => 'Archriss - Utility Datetime Checker',
     'description' => 'This task test timestamp generation.',
 );
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Archriss\ArcUtility\Scheduler\ContextChecker'] = array(
+    'extension' => $_EXTKEY,
+    'title' => 'Archriss - Utility TYPO3 Context Checker',
+    'description' => 'This task test context used for scheduler.',
+);
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Archriss\ArcUtility\Scheduler\MailTester'] = array(
     'extension' => $_EXTKEY,
     'title' => 'Archriss - Utility Mail Tester',
