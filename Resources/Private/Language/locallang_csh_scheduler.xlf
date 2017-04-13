@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-04-13T11:33:05Z" product-name="arc_utility">
+		<header/>
+		<body>
+			<trans-unit id="task_dirs.alttitle">
+				<source>Directory to clean</source>
+			</trans-unit>
+			<trans-unit id="task_dirs.description">
+				<source>Relative to website root dir, 1 per line</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

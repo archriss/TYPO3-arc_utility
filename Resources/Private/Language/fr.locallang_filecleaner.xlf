@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="fr" datatype="plaintext" original="messages" date="2017-04-13T11:28:51Z" product-name="arc_utility">
+		<header/>
+		<body>
+			<trans-unit id="field.dirs">
+				<source>Directory to clean</source>
+                <target state="translated">Répertoires à nettoyer</target>
+			</trans-unit>
+			<trans-unit id="field.days">
+				<source>Age in days of file to remove</source>
+                <target state="translated">Age en jours des fichiers à nettoyer</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

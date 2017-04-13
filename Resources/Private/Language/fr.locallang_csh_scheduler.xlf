@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="fr" datatype="plaintext" original="messages" date="2017-04-13T11:34:52Z" product-name="arc_utility">
+		<header/>
+		<body>
+			<trans-unit id="task_dirs.alttitle">
+				<source>Directory to clean</source>
+                <target state="translated">Répertoires à nettoyer</target>
+			</trans-unit>
+			<trans-unit id="task_dirs.description">
+				<source>Relative to website root dir, 1 per line</source>
+                <target state="translated">Relatif au répertoire racite du site, 1 par ligne</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

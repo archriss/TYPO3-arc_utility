@@ -21,3 +21,9 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Archriss\ArcUti
     'description' => 'This task test mail sending to specified address.',
     'additionalFields' => 'Archriss\ArcUtility\Scheduler\MailTesterFieldProvider',
 );
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Archriss\ArcUtility\Scheduler\FileCleaner'] = array(
+    'extension' => $_EXTKEY,
+    'title' => 'Archriss - File Cleaner',
+    'description' => 'This task clean files from some directory after some days.',
+    'additionalFields' => 'Archriss\ArcUtility\Scheduler\FileCleanerFieldProvider',
+);
