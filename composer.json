@@ -1,17 +1,18 @@
 {
   "name": "archriss/arc-utility",
   "type": "typo3-cms-extension",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Collection of usefull utility in scheduler and viewhelper",
   "license": "GPL-2.0",
   "authors": [
     {
       "name": "Christophe Monard",
+      "email": "cmonard@archriss.com",
       "role": "Development"
     }
   ],
   "require": {
-    "typo3/cms": "7.6.0 - 9.5.99"
+    "typo3/cms-core": "^9.5.0"
   },
   "keywords": [
     "TYPO3 CMS",
