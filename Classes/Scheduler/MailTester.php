@@ -102,7 +102,7 @@ class MailTester extends \TYPO3\CMS\Scheduler\Task\AbstractTask {
      * @return	FALSE when missing parameters, otherwise array of result (sent, fail)
      */
     protected static function sendMail($param = array()) {
-        if (count($param > 0) && isset($param['to']) && isset($param['body'])) {
+        if (count($param) > 0 && isset($param['to']) && isset($param['body'])) {
             /* @var $mail \TYPO3\CMS\Core\Mail\MailMessage */
             $mail = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Mail\\MailMessage');
             // To
