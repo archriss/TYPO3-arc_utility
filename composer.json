@@ -1,0 +1,30 @@
+{
+  "name": "archriss/arc-utility",
+  "type": "typo3-cms-extension",
+  "version": "1.1.0",
+  "description": "Collection of usefull utility in scheduler and viewhelper",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Christophe Monard",
+      "role": "Development"
+    }
+  ],
+  "require": {
+    "typo3/cms": "7.6.0 - 9.5.99"
+  },
+  "keywords": [
+    "TYPO3 CMS",
+    "Utility"
+  ],
+  "homepage": "https://github.com/archriss/TYPO3-arc_utility",
+  "replace": {
+    "arc_utility": "self.version",
+    "typo3-ter/arc-utility": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Archriss\\ArcUtility\\": "Classes/"
+    }
+  }
+}
