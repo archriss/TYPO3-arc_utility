@@ -1,0 +1,2 @@
+  # cat=basic/10; type=boolean; label=Rendre les sys_category plus facile à exploiter (indenter les catégories)
+sys_cat_title=0

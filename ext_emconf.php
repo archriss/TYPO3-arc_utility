@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array(
     'title' => 'Archriss - Utility testers',
     'description' => 'Collection of usefull utility in scheduler and viewhelper',
     'category' => 'Archriss',
-    'version' => '1.2.1',
+    'version' => '1.2.2',
     'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author_company' => 'Archriss',
     'constraints' => array(
         'depends' => array(
-            'php' => '5.3.7-7.3.99',
+            'php' => '7.0.0-7.3.99',
             'typo3' => '9.5.0-9.5.99',
         ),
         'conflicts' => array(

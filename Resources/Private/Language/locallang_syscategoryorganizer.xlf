@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-05-22T05:30:49Z" product-name="arc_utility">
+		<header/>
+		<body>
+			<trans-unit id="field.pids">
+				<source>Storage pids where script need to reorganize categories</source>
+			</trans-unit>
+			<trans-unit id="field.step">
+				<source>Step between each category for sorting (able us to add more cat between them)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

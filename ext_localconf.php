@@ -27,3 +27,9 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Archriss\ArcUti
     'description' => 'This task clean files from some directory after some days.',
     'additionalFields' => 'Archriss\ArcUtility\Scheduler\FileCleanerFieldProvider',
 );
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Archriss\ArcUtility\Scheduler\SysCategoryOrganizer'] = array(
+    'extension' => $_EXTKEY,
+    'title' => 'Archriss - sys_category organizer',
+    'description' => 'This task reorganize sys_category from specific storage folder in order to reflect their true disposition uppon the tree.',
+    'additionalFields' => 'Archriss\ArcUtility\Scheduler\SysCategoryOrganizerFieldProvider',
+);
